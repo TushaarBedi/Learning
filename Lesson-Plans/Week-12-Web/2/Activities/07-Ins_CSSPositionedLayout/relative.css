@@ -1,0 +1,59 @@
+/*
+ * Relative Position: sets boxes relative to its original location
+ * (i.e. below or left of where the element would normally be)
+ */
+
+.box-set {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  
+  background: darkgray;
+}
+
+.box {
+  /* relative positioning */
+  display: inline-block;
+  position: relative;
+  width: 175px;
+  height: 175px;
+  background: #2db34a;
+  border: 2px solid black;
+  transition: all .2s ease-in-out;
+  
+}
+
+.box-1 {
+  width: 24%;
+  display: inline-block;
+}
+.box:hover { 
+  padding: 0.1%;
+  background-color: yellow;
+  top: 40px;
+  bottom: 40px;
+  border: 5px solid black;
+  transform: scale(1.1);
+  opacity: .8;
+}
+
+.box-2 {
+  width: 24%;
+  z-index: 3;
+  display: inline-block;
+}
+
+.box-3 {
+  width: 24%;
+  z-index: 4;
+  display: inline-block;
+
+}
+.box-4 {
+  width: 24%;
+  z-index: 4;
+  display: inline-block;
+
+}
+
+
